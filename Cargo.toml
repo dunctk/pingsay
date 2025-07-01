@@ -1,0 +1,18 @@
+[package]
+name = "PingSay"
+version = "0.1.0"
+edition = "2021"
+authors = ["Duncan Trevithick <d@uncan.net>"]
+description = "A CLI tool to monitor internet connectivity with macOS speech notifications when connection dropped and restored"
+license = "MIT"
+keywords = ["cli", "network", "monitor", "macos"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "pingsay"
+path = "src/main.rs"
+
+[dependencies]
+reqwest = "0.11"
+tokio = { version = "1.0", features = ["full"] }
+chrono = { version = "0.4", features = ["serde"] }
