@@ -1,5 +1,7 @@
 # pingsay
 
+![logo](logo.png)
+
 A simple command-line tool for macOS that monitors your internet connection and uses the built-in `say` command to notify you of status changes.
 
 ## Platform
